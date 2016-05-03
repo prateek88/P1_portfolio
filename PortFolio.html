@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <script src="js/jquery-1.12.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="row">
+                <div class="col-md-6">
+                    <img class="title-logo" src="images/logo.svg" alt="Logo for the page" height="100" width="80">
+                </div>
+                <div class="col-md-6 text-right text-uppercase">
+                    <h1 class="text-thin title-super">Prateek goyal</h1>
+                    <h4>front-end ninja</h4>
+                </div>
+        </header>
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="style1">
+            </div>
+        </div>
+        <!-- TODO: Enhance navigaton and add meaningful elements-->
+        <nav>
+            <div class="row">
+                <div class="col-md-12" role="navigation">
+                    <ul class="nav nav-tabs mynav">
+                        <li role="presentation"><a href="#">Home</a></li>
+                        <li role="presentation"><a href="#">Downloads</a></li>
+                        <li role="presentation"><a href="#">About</a></li>
+                        <li role="presentation"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- TODO: use srcset and images with different resolutions-->
+        <div class="row">
+            <div class="col-md-12">
+                <img src="images/webdeveloper.jpg" alt="Main image" class="img-responsive">
+            </div>
+        </div>
+        <!-- TODO: Add meaningful images for different projects-->
+        <section>
+            <div class="row">
+                <h2 class="col-md-12 text-muted">Featured Work</h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="images/postcard.jpg" alt="project1" class="img-responsive image-border" data-toggle="modal" data-target="#project1">
+                    <h3 class="text-uppercase">Project1</h3>
+                    <p><a href="#">Please click to know more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/Resume-Writing2.jpg" alt="project2" class="img-responsive image-border" data-toggle="modal" data-target="#project2">
+                    <h3 class="text-uppercase">Project2</h3>
+                    <p><a href="#">Please click to know more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/Resume-Writing2.jpg" alt="project3" class="img-responsive image-border" data-toggle="modal" data-target="#project3">
+                    <h3 class="text-uppercase">Project3</h3>
+                    <p><a href="#">Please click to know more</a></p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/Resume-Writing2.jpg" alt="project4" class="img-responsive image-border" data-toggle="modal" data-target="#project4">
+                    <h3 class="text-uppercase">Project4</h3>
+                    <p><a href="#">Please click to know more</a></p>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="style1">
+            </div>
+        </div>
+        <!-- TODO: Use more zocial icons. Could not find in bootstrap-->
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                      <a href="#"><li class="zocial-facebook"></li></a>
+                      <a href="#"><li class="zocial-twitter"></li></a>
+                      <a href="#"><li class="zocial-googleplus"></li></a>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-right">&#169</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--modals-->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Portfolio</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/postcard.jpg" class="img-responsive">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Project 2</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Resume-Writing2.jpg" class="img-responsive">
+                    This was my second project in this class.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Project 3</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Resume-Writing2.jpg" class="img-responsive">
+                    This was my third project in this class.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Project 4</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Resume-Writing2.jpg" class="img-responsive">
+                    This was my fourth project in this class.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
